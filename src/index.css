@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body{
+  background-image: url("./assets/background.png");
+   height: h-screen;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0%;
+  margin: 0%;
+}
+
