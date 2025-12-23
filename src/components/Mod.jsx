@@ -1,15 +1,26 @@
+import { useApiUpdate } from "./Data"
 
 
-export function Mode(){
+export function Mode({ mode, setMode }) {
 
-
-    return(
+    return (
         <div>
-            <div className="flex flex-wrap justify-center ">
-                    <p>Easy Mode</p>
-                    <p>Medium Mode</p>
-                    <p>Hard Mode</p>
-
+            <div className="flex flex-wrap gap-3 justify-center  text-amber-100">
+                <p className="bg-white/30 backdrop-blur-md w-30" onClick={() => {
+                    setMode("Easy")
+                }
+                }
+                >Easy Mode</p>
+                <p className="bg-white/30 backdrop-blur-md w-30" onClick={() => {
+                    setMode("Medium")
+                }
+                }
+                >Medium Mode</p>
+                <p className="bg-white/30 backdrop-blur-md w-30" onClick={() => {
+                    setMode("Hard")
+                }
+                }
+                >Hard Mode</p>
             </div>
         </div>
     )
